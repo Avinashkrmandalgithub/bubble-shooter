@@ -68,6 +68,10 @@ h2{
   height: calc(100% - 80px);
   background-color: #000;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -91,4 +95,30 @@ h2{
 .bubble:hover {
   background-color: antiquewhite;
   transform: scale(1.2)
+}
+
+
+
+
+#restartBtn {
+  background: linear-gradient(135deg, #4cafef, #2a77d4);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+#restartBtn:hover {
+  background: linear-gradient(135deg, #5cc8ff, #3a8bd9);
+  transform: scale(1.05);
+}
+
+#restartBtn:active {
+  transform: scale(0.95);
 }
